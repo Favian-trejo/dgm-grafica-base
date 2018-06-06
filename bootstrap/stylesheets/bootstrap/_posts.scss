@@ -204,11 +204,17 @@
         color: #0c9;
       }
     }
-    a.read-more {
-      font-size: 12px;
-      color: #0c9;
-      &:hover {
-        font-weight: 600;
+    a {
+      &:first-child {
+        display: block;
+        min-height: 50px;
+      }
+      &.read-more {
+        font-size: 12px;
+        color: #0c9;
+        &:hover {
+          font-weight: 600;
+        }
       }
     }
     p {
