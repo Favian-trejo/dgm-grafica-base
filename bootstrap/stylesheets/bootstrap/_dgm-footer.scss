@@ -1,0 +1,147 @@
+//
+// DGM-Footer
+// --------------------------------------------------
+
+.dgm-footer {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  padding: 15px 0 10px;
+  background-color: #eaeaea;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 19px;
+  color: #2c2c2b;
+
+  ul {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    list-style: none;
+
+    > li {
+      > a {
+        color: #2c2c2b;
+        font-weight: 200;
+
+        &:hover {
+          text-decoration: none;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .main-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f6f6f6;
+  }
+
+  .new-container {
+    padding-top: 15px;
+  }
+
+  .container-fluid {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  .img-link {
+    display: block;
+    margin-bottom: 20px !important;
+
+    &.first {
+      margin-top: 140px;
+    }
+  }
+
+  .link-open {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    img {
+      position: relative;
+      padding: 0;
+      width: 80px;
+      display: inline-block;
+      height: 15px;
+    }
+  }
+
+  .navbar-brand {
+    width: 215px;
+    display: block;
+    overflow: hidden;
+  }
+
+  .navbar-brand img {
+    width: 100%;
+  }
+
+  .footer-logo {
+    overflow: hidden;
+
+    > .img-link {
+      width: 124px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .navbar-brand {
+      padding: 0;
+      height: inherit;
+    }
+  }
+
+  .gobmx-link-logo {
+    display: inline-block;
+
+      > img {
+      width: 100px;
+      padding: 20px 0;
+    }
+  }
+}
+
+@media (max-width: $screen-sm - 1) {
+  body.front {
+    margin: 0 0 326px;
+  }
+
+  .to-right {
+    float: inherit;
+  }
+
+  .navbar-brand {
+    margin-bottom: 20px;
+  }
+}
+// $screen-sm = 768px
+@media (min-width: $screen-sm) {
+  body.front {
+    margin: 0 0 264px;
+  }
+
+  .to-right {
+    float: right;
+  }
+
+  .navbar-brand {
+    margin-bottom: 65px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+  /* IE10+ specific styles go here */
+  
+  .dgm-footer {
+    bottom: inherit;
+  }
+}
