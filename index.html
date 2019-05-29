@@ -49,8 +49,6 @@
 
           <section id="config" class="separator">
             <h2 class="section-title">Configuración básica</h2>
-            <p>En datos.gob.mx utilizamos nuestro navbar y footer como componentes, para ello, cada aplicacioón necesita <a href="https://github.com/webcomponents/webcomponentsjs" target="_blank">webcomponentsjs</a> y <a href="https://github.com/Polymer/polymer" target="_blank">polymer</a> para poder utilizar dichos componentes.</p>
-            <p>Puedes agregar <strong>webcomponents</strong> y <strong>polymer</strong> utilizando <a href="https://bower.io/" target="_blank"><strong>bower</strong></a>.</p>
             <p><strong>Es importante no descargar ningún archivo de estilos ni de javascript básicos como bootstrap y jquery</strong>, porque en nuestros archivos de estilos y de javascript ya vienen incluidas esas librerías, así es que se deben ocupar únicamente los alojados en nuestro CDN, ya que estos podrán cambiar de manera constante y sin previo aviso. </p>
 
             <ol class="bottom-buffer space">
@@ -98,8 +96,6 @@
           <section id="basic-example" class="separator">
             <h2 class="section-title">Ejemplo básico</h2>
             <p>Este es el template básico para agregar una nueva página. Para que el framework funcione correctamente se debe incorporar la liga de los estilos dentro de la etiqueta <code>&lt;head&gt;</code>, y la liga del script antes de cerrarse la etiqueta <code>&lt;body&gt;</code>.</p>
-            <p><strong>NOTA:</strong></p>
-            <p>Recuerda que necesitas instalar las dependencias con <a href="https://bower.io/" target="_blank">bower</a> de webcomponentsjs y polymer para utilizar nuestros componentes de <strong>navbar</strong> y <strong>footer</strong>.</p>
             <div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"es"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;head&gt;</span>
@@ -107,14 +103,6 @@
     <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;title&gt;</span>Ejemplo de nueva página para datos.gob.mx<span class="nt">&lt;/title&gt;</span>
-
-    <span class="c">&lt;!-- webcomponents y polymer --&gt;</span>
-    <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bower_components/webcomponentsjs/webcomponents-lite.min.js"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"bower_components/polymer/polymer.html"</span> <span class="na">rel=</span><span class="s">"import"</span><span class="nt">&gt;</span>
-
-    <span class="c">&lt;!-- navbar y footer de DGM --&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"https://cdn.datos.gob.mx/bower_components/dgm-navbar/dgm-navbar.html"</span> <span class="na">rel=</span><span class="s">"import"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"https://cdn.datos.gob.mx/bower_components/dgm-footer/dgm-footer.html"</span> <span class="na">rel=</span><span class="s">"import"</span><span class="nt">&gt;</span>
 
     <span class="c">&lt;!-- CSS --&gt;</span>
     <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"/favicon.ico"</span> <span class="na">rel=</span><span class="s">"shortcut icon"</span><span class="nt">&gt;</span>
@@ -132,9 +120,7 @@
 
     <span class="c">&lt;!-- Contenido --&gt;</span>
     <span class="nt">&lt;main</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;dgm-navbar</span><span class="nt">&gt;</span><span class="nt">&lt;/dgm-navbar</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;dgm-footer</span><span class="nt">&gt;</span><span class="nt">&lt;/dgm-footer</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/main&gt;</span>
 
     <span class="c">&lt;!-- JS --&gt;</span>
